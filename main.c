@@ -18,7 +18,7 @@ int main(int argc __attribute__((unused)), char *argv[], char *env[])
 	char *buffer = NULL;
 	char **commands = NULL,  **envpath = NULL, **env_clone = NULL;
 	size_t bytes_read = 0;
-	int commands_executed = 0, index = 0;
+	int commands_executed = 0;
 	int exit_code = NULL_FOUND, file_info = VALID_COMMAND;
 
 	signal(SIGINT, handle_sigint);
@@ -39,7 +39,7 @@ int main(int argc __attribute__((unused)), char *argv[], char *env[])
 			continue;
 		}
 		file_info = _checkfile(commands[0]);
-		_isrelpath(file_info, envpath, commands, buffer, &exit_code);
+		_relpath(&file_info, envpath, commands, buffer, &exit_code);
 		exit_code = _execute(((exit_code == CTRL_C_SIGNAL_CODE) ?
 		&buffer : commands), commands_executed, argv[0], env);
 		if (exit_code == EXIT_SUCCESS && file_info == IS_REL_PATH)
