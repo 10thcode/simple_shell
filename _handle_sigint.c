@@ -1,5 +1,7 @@
 #include "main.h"
 
+int signal_received = 0;
+
 /**
  * handle_sigint - Callback function to handle Ctrl + C signal
  *

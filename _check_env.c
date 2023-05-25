@@ -1,5 +1,7 @@
 #include "main.h"
 
+int signal_received = 0;
+
 /**
  * _checkenv - Check whether the prompt accepted is the env command and display
  * the environment variables

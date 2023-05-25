@@ -1,5 +1,8 @@
 #include "main.h"
 
+int signal_received = 0;
+env_node_t *head = NULL;
+
 /**
  * main - Shell intry point
  *

@@ -89,7 +89,7 @@ int _exitshell(char **envpath, char **env_clone, char *buffer);
 void _relpath(int file_info, char **envpath, char **commands
 , char *buffer, int *exit_code);
 
-int signal_received = EXIT_SUCCESS;
-env_node_t *head = NULL;
+extern int signal_received;
+extern env_node_t *head;
 
 #endif

@@ -1,5 +1,7 @@
 #include "main.h"
 
+env_node_t *head = NULL;
+
 /**
  * _isexit - Determine whether the command obtained is the exit command
  *

@@ -1,5 +1,7 @@
 #include "main.h"
 
+ env_node_t *head = NULL;
+
 /**
  * _exit_shell - Clean up memory before exiting shell
  *

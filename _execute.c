@@ -1,5 +1,7 @@
 #include "main.h"
 
+int signal_received = 0;
+
 /**
  * _execute - Execute the given command
  *
