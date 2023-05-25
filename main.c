@@ -1,5 +1,7 @@
 #include "main.h"
 
+void handle_sigint(int signum);
+
 int signal_received = 0;
 env_node_t *head = NULL;
 

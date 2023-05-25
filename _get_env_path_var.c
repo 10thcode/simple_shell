@@ -1,7 +1,5 @@
 #include "main.h"
 
-env_node_t *head = NULL;
-
 /**
  * _getenvpathvar - Obtain the PATH from the environment variables
  *

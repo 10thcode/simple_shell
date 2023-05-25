@@ -1,7 +1,5 @@
 #include "main.h"
 
-env_node_t *head = NULL;
-
 /**
  * _printenv - Prints the environment variables on the system
 */

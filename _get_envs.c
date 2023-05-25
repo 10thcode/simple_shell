@@ -1,7 +1,5 @@
 #include "main.h"
 
-env_node_t *head = NULL;
-
 /**
  * _getenvs - Get the environment variables as a list
  *

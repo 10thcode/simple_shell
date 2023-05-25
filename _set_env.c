@@ -1,7 +1,5 @@
 #include "main.h"
 
-env_node_t *head = NULL;
-
 /**
  * _setenv - Add or updates an environment variable with the name
  * @name to the value @value if @overwrite is set to

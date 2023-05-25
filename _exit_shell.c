@@ -1,13 +1,13 @@
 #include "main.h"
 
- env_node_t *head = NULL;
-
 /**
- * _exit_shell - Clean up memory before exiting shell
+ * _exitshell - Clean up memory before exiting shell
  *
  * @envpath: A pointer to the environment PATH variables
  * @env_clone: A pointer to a copy of the users environment variables
  * @buffer: The command accepted from the user
+ *
+ * Return: the exit code for the last successfull command
  */
 int _exitshell(char **envpath, char **env_clone, char *buffer)
 {
