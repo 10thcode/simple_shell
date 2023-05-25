@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _exitshell - Clean up memory before exiting shell
+ * _exit_shell - Clean up memory before exiting shell
  *
  * @envpath: A pointer to the environment PATH variables
  * @env_clone: A pointer to a copy of the users environment variables
