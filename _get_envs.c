@@ -5,7 +5,7 @@
  *
  * @env: A pointer to the system's environment variable
  *
- * Return: The head node in the list of environment variables
+ * Return: The memory address to a copy of the environment variables
 */
 char **_getenvs(char **env)
 {

@@ -85,6 +85,9 @@ env_node_t *_addnodeend(env_node_t **head, char *name, char *value);
 env_node_t *_findnode(env_node_t *head, char *name);
 void free_list(env_node_t *head);
 char *_strdup(char *str);
+int _exitshell(char **envpath, char **env_clone, char *buffer);
+void _relpath(int file_info, char **envpath, char **commands
+, char *buffer, int *exit_code);
 
 int signal_received = EXIT_SUCCESS;
 env_node_t *head = NULL;

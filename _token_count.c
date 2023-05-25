@@ -1,4 +1,4 @@
-#include "mmain.h"
+#include "main.h"
 
 /**
  * _tokencount - Counts the number of tokens in the given command
