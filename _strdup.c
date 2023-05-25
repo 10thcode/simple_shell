@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strdup - Creates a duplicate for the given string
  *
