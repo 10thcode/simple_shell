@@ -9,6 +9,8 @@
  */
 int _exitshell(char **envpath, char **env_clone, char *buffer)
 {
+	int index = 0;
+
 	if (envpath != NULL)
 	{
 		_freestr(envpath[0]);
