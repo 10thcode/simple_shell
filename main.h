@@ -38,6 +38,7 @@ typedef struct env_node
 #define CTRL_C_SIGNAL_CODE 130
 #define IS_ABS_PATH 1
 #define IS_REL_PATH 2
+#define IS_EXEC 1
 #define IS_PATH 1
 #define IS_NOT_PATH 0
 #define ERROR_OCCURED -1
@@ -88,6 +89,7 @@ char *_strdup(char *str);
 int _exitshell(char **envpath, char **env_clone, char *buffer);
 void _relpath(int *file_info, char **envpath, char **commands
 , char *buffer, int *exit_code);
+int _isexec(char *path);
 
 extern int signal_received;
 extern env_node_t *head;

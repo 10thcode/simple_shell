@@ -15,6 +15,14 @@ int _checkfile(char *path)
 	{
 		return (NULL_FOUND);
 	}
+	if (_isexec(path) == IS_EXEC)
+	{
+		if (access(path, F_OK) == VALID_COMMAND)
+		{
+			return (VALID_COMMAND);
+		}
+		return (INVALID_COMMAND);
+	}
 	if (_isrelpath(path) == IS_REL_PATH)
 	{
 		return (IS_REL_PATH);
@@ -25,3 +33,4 @@ int _checkfile(char *path)
 	}
 	return (INVALID_COMMAND);
 }
+
