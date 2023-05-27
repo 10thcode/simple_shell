@@ -11,12 +11,10 @@
 */
 int _isexec(char *path)
 {
-	char first_character, second_character;
+	char first_character;
 
 	first_character = path[0];
-	second_character = path[1];
-	if (first_character == '.' &&
-	second_character == '/')
+	if (first_character == '.')
 	{
 		return (IS_EXEC);
 	}
